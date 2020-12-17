@@ -1,0 +1,163 @@
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+/* Basic setting */
+.cr-grey {
+  color: #707070;
+}
+section,
+article {
+  margin: 1rem;
+}
+button {
+  background: none;
+  border: none;
+}
+/* Header */
+header {
+  background: #000000;
+  height: 2.5rem;
+  width: 100%;
+  color: #fff;
+  line-height: 2.5rem;
+}
+header i {
+  padding: 5px;
+}
+.fa-youtube {
+  color: #cc0000;
+}
+header .fas {
+  float: right;
+  line-height: 2.5rem;
+  padding: 0 0.5rem;
+}
+/* Video */
+#video video {
+  width: 100%;
+}
+/* Section - info */
+
+li {
+  display: inline;
+  padding: 0.1rem;
+  font-size: 0.5rem;
+  color: #0360ce;
+}
+#title {
+  display: flex;
+  justify-content: space-between;
+}
+#title p {
+  margin-left: 0;
+}
+#title p.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+#title i {
+  margin-right: 0.3em;
+}
+#title .more {
+  transition: transform 300ms;
+  height: 100%;
+}
+#title .more.clicked {
+  transform: rotate(180deg);
+}
+#info #views {
+  font-size: 0.5rem;
+}
+/* Section - btn */
+#btn {
+  display: flex;
+  margin: 1rem;
+  text-align: center;
+}
+#btn p {
+  font-size: 0.5rem;
+}
+#btn i:hover {
+  color: #0360ce;
+}
+/* Section - profile */
+#profile {
+  padding: 1rem;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+}
+#profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0;
+}
+#profile div {
+  width: 80%;
+  margin: 0 0 0 1rem;
+  padding: 10px 0;
+}
+#profile div p:nth-last-child(1) {
+  font-size: 0.5rem;
+}
+#profile .subscriber {
+  margin: 0;
+  background: #cc0000;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px;
+  line-height: 3em;
+  height: 3em;
+  width: 5em;
+}
+/* Article */
+article .container video {
+  width: 100%;
+}
+article > p {
+  color: #707070;
+  padding: 10px 0;
+}
+article .container > a {
+  width: 40rem;
+}
+article .container {
+  display: flex;
+}
+.description {
+  width: 40rem;
+  padding: 0 1em;
+}
+.description .next-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+article .container article .container p {
+  font-size: 0.8rem;
+}
+.container i {
+  padding-top: 6px;
+}
+@media screen and (min-width: 768px) {
+  .main-wrap {
+    display: flex;
+  }
+  article {
+    width: 50%;
+  }
+}
